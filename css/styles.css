@@ -192,14 +192,21 @@ img {
 
 
 /* #region: section-hero  */
+/* url(../images/img-name.jpeg); */
+/* 
+          background-image: 
+          linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+           url(../images/img-name.jpg);
+           */
 .hero {
   background-image:
-    linear-gradient(to bottom, #2E2F42B2, #2E2F42B2),
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 600px;
+  background-size: cover;
   background-color: #2e2f42;
+  max-width: 1440px;
 }
 
 .hero-header {
@@ -235,6 +242,9 @@ img {
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
+
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
