@@ -575,6 +575,7 @@ img {
 /* #region:footer */
 .footer {
   display: flex;
+  align-items: baseline;
 
   /* position: fixed; */
   padding-top: 100px;
@@ -585,6 +586,7 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 120px
 }
 
 .footer-logo-span {
@@ -626,7 +628,7 @@ text {
   font-weight: 500;
   line-height: 24px;
   /* 150% */
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 
   margin-bottom: 16px;
 }
