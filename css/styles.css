@@ -195,16 +195,19 @@ img {
 }
 
 /* .header-nav-item::before {} */
+.main {
+  color: #404bbf;
+}
 
 .header-nav-item.main::after,
 .header-nav-item:hover::after {
-  content: "*******";
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
-  border-radius: 4px;
+  border-radius: 2px;
   color: #404bbf;
   /* transform: translateY(20px); */
 }
