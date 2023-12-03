@@ -102,6 +102,33 @@ img {
   padding: 2px 8px;
 }
 
+/*
+Для хедера в класі заданий стиль 
+для визначення тіні для елемента У першому пункті меню,
+у посилання задані класи,
+що мають мінімум 3 символи,
+всі літери латиницею,
+всі літери маленькі,
+та можуть містити дефіс чи нижнє підкреслення У першому пункті меню у посилання в класі заданий стиль position: relative;
+для встановлення позиціонування елемента відносно його звичайного місця в потоці документу У першому пункті меню у посилання в класі заданий стиль color: #404bbf;
+для визначення кольору тексту До класу з псевдоелементом ::after додана властивість content: '' для встановлення вмісту,
+який має бути відображений в псевдоелементі До класу з псевдоелементом ::after додана властивість position: absolute;
+яка встановлює позиції елемента відносно його батьківського елемента До класу з псевдоелементом ::after додана властивість left: 0;
+для встановлення відстані між лівим краєм елемента і лівим краєм його батьківського елемента До класу з псевдоелементом ::after додана властивість bottom: -1px;
+для встановлення відстані між нижнім краєм елемента і нижнім краєм його батьківського елемента До класу з псевдоелементом ::after додана властивість height: 4px;
+для визначення висоти елемента До класу з псевдоелементом ::after додана властивість background-color: #404bbf;
+для визначення кольору фону елемента До класу з псевдоелементом ::after додана властивість border-radius: 2px;
+для визначення радіусу закруглення кутів елемента У першому пункті меню у посилання в класі заданий стиль transition зі значенням color 250ms cubic-bezier(0.4, 0, 0.2, 1) для плавної зміни кольору текстового контенту У першому пункті списку з контактами у посиланні в класі заданий стиль transition зі значенням color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+для плавної зміни кольору текстового контенту У другому пункті списку з контактами,
+у посиланні,
+використовується такий самий клас як і в посиланні в першому пункті У другому пункті меню,
+у посилання задані класи,
+що мають мінімум 3 символи,
+всі літери латиницею,
+всі літери маленькі,
+та можуть містити дефіс чи нижнє підкреслення У другому пункті списку з контактами у посиланні в класі заданий стиль transition зі значенням color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+для плавної зміни кольору текстового контенту
+*/
 /* #region: header */
 .header {
   position: sticky;
@@ -114,6 +141,9 @@ img {
   border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 
   /* position: relative; */
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -150,10 +180,29 @@ img {
   color: #2e2f42;
   letter-spacing: 0.02em;
 
+  position: relative;
+  /* color: #404bbf; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-item:hover,
 .header-nav-item:focus {
+  color: #404bbf;
+  /* color: #fff000; */
+}
+
+.header-nav-item::before {}
+
+.header-nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 4px;
+
+
   color: #404bbf;
 }
 
@@ -171,7 +220,8 @@ img {
   margin-left: 120px;
 }
 */
-.contacts-item {
+.contacts-item,
+.address-link {
   /* display: block; */
 
   font-size: 16px;
@@ -179,11 +229,16 @@ img {
   line-height: 1.5;
   color: #434455;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
-.contacts-item:focus {
+.contacts-item:focus,
+.address-link:hover,
+.address-link:focus {
   color: #404bbf;
+  /* color: #fff000; */
 }
 
 /* #endregion: address-contacts */
@@ -243,13 +298,14 @@ img {
   margin-right: auto;
   margin-left: auto;
 
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404BBF;
+  /* transform: rotate(111deg) */
 }
 
 /* #endregion: section-hero  */
