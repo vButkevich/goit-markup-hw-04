@@ -191,7 +191,7 @@ img {
 .header-nav-item:focus {
   color: #404bbf;
   color: darkorange;
-  background-color: #404bbf;
+  background-color: #d1d3d8;
 }
 
 /* .header-nav-item::before {} */
