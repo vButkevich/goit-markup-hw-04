@@ -188,7 +188,7 @@ img {
 .header-nav-item:hover,
 .header-nav-item:focus {
   color: #404bbf;
-  /* color: #fff000; */
+  color: #fff000;
 }
 
 .header-nav-item::before {}
