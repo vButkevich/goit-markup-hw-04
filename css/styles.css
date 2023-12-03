@@ -352,7 +352,10 @@ img {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  /* gap: 24px; */
+  gap: 24px;
+}
+
+.footer-social-links {
   gap: 16px;
 }
 
