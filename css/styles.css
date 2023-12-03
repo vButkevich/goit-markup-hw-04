@@ -221,8 +221,8 @@ img {
   margin-left: 120px;
 }
 */
-.contacts-item,
-.address-link {
+.address-link,
+.contacts-item {
   /* display: block; */
 
   font-size: 16px;
@@ -234,12 +234,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-item:hover,
-.contacts-item:focus,
 .address-link:hover,
-.address-link:focus {
+.address-link:focus,
+.contacts-item:hover,
+.contacts-item:focus {
   color: #404bbf;
-  /* color: #fff000; */
+  color: #fff000;
 }
 
 /* #endregion: address-contacts */
