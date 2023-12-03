@@ -168,42 +168,43 @@ img {
 .header-nav-items {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-nav-item {
-  /* display: block; */
-  /* padding: 24px 0; */
+  display: block;
+  position: relative;
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
   color: #2e2f42;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 
-  position: relative;
-  /* color: #404bbf; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
+/* .main, */
 .header-nav-item:hover,
 .header-nav-item:focus {
-  color: #404bbf;
-  color: #fff000;
+  /* color: #404bbf; */
+  color: darkorange;
 }
 
-.header-nav-item::before {}
+/* .header-nav-item::before {} */
 
-.header-nav-item::after {
-  content: "";
+.header-nav-item.main::after,
+.header-nav-item:hover::after {
+  content: "*******";
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 4px;
-
-
   color: #404bbf;
+  transform: translateY(20px);
 }
 
 /* #region:address-contacts */
