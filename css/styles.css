@@ -226,6 +226,7 @@ img {
   border-radius: 2px;
   color: #404bbf;
   /* transform: translateY(20px); */
+  width: 100%;
 }
 
 /* #region:address-contacts */
@@ -286,7 +287,8 @@ img {
   background-position: center;
   background-color: #2e2f42;
   background-size: cover;
-  max-width: 1440px;
+
+  /* max-width: 1440px; */
 }
 
 .hero-header {
